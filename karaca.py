@@ -14,10 +14,11 @@ def decrypt(word):
     for i in word:
         old = i + old
     old = old.replace('aca','')
-    old = old.replace('a', '0')
-    old = old.replace('e', '1')
-    old = old.replace('o', '2')
-    old = old.replace('u', '3')
+    old = old.replace('0', 'a')
+    old = old.replace('1', 'e')
+    old = old.replace('2', 'o')
+    old = old.replace('3', 'u')
+    return old
 
 print(encrypt(input('Vad vill du kryptera? ')))
 
